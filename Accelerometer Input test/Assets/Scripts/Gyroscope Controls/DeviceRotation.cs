@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEngine;
 
 public static class DeviceRotation
@@ -14,7 +13,7 @@ public static class DeviceRotation
             InitGyro();
         }
 
-        return HasGyroscope ? ReadyGyroscopeRotation() : quaternion.identity;
+        return HasGyroscope ? ReadyGyroscopeRotation() : Quaternion.identity;
     }
 
     private static void InitGyro()
